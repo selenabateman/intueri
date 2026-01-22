@@ -7,141 +7,143 @@
 
   <style>
     :root {
-      --text: #1f2933;
-      --muted: #4b5563;
-      --line: #e5e7eb;
-      --card: #ffffff;
-      --bg: #f7f6f3;
-      --accent: #1f6f5b;
+      --text:#1f2933;
+      --muted:#4b5563;
+      --line:#e5e7eb;
+      --card:#ffffff;
+      --bg:#f7f6f3;
+      --accent:#1f6f5b;
     }
 
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",
+                   Roboto,Helvetica,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
     }
 
-    .wrap {
-      max-width: 980px;
-      margin: 76px auto;
-      padding: 0 24px 140px;
+    .wrap{
+      max-width:980px;
+      margin:80px auto;
+      padding:0 24px 140px;
     }
 
-    .header {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 34px 34px;
-      box-shadow: 0 12px 32px rgba(0,0,0,0.04);
+    .header{
+      text-align:center;
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:40px 32px;
+      box-shadow:0 14px 34px rgba(0,0,0,0.04);
     }
 
-    h1 {
-      margin: 0 0 10px 0;
-      font-size: 2.45rem;
-      letter-spacing: -0.02em;
+    .logo{
+      max-width:140px;
+      margin:0 auto 18px;
+      display:block;
     }
 
-    .tagline {
-      margin: 0;
-      font-size: 1.08rem;
-      color: var(--muted);
-      line-height: 1.65;
-      max-width: 80ch;
+    h1{
+      margin:0 0 12px;
+      font-size:2.4rem;
+      letter-spacing:-0.02em;
     }
 
-    .accent-line {
-      margin-top: 16px;
-      width: 78px;
-      height: 3px;
-      background: var(--accent);
-      border-radius: 999px;
+    .tagline{
+      margin:0 auto;
+      max-width:80ch;
+      font-size:1.05rem;
+      color:var(--muted);
+      line-height:1.65;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-      margin-top: 26px;
+    .credentials{
+      margin-top:16px;
+      font-size:0.95rem;
+      color:#374151;
     }
 
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 26px 26px;
-      box-shadow: 0 12px 32px rgba(0,0,0,0.03);
+    .accent-line{
+      margin:22px auto 0;
+      width:72px;
+      height:3px;
+      background:var(--accent);
+      border-radius:999px;
     }
 
-    h2 {
-      margin: 0 0 12px 0;
-      font-size: 1.25rem;
-      letter-spacing: -0.01em;
+    .grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:22px;
+      margin-top:32px;
     }
 
-    p {
-      margin: 0;
-      font-size: 1rem;
-      color: var(--muted);
-      line-height: 1.7;
-      max-width: 78ch;
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:28px;
+      box-shadow:0 12px 30px rgba(0,0,0,0.03);
     }
 
-    .spacer { margin-top: 12px; }
-
-    .pillrow {
-      margin-top: 14px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
+    h2{
+      margin:0 0 12px;
+      font-size:1.25rem;
+      letter-spacing:-0.01em;
     }
 
-    .pill {
-      display: inline-block;
-      border: 1px solid var(--line);
-      background: #fafafa;
-      border-radius: 999px;
-      padding: 8px 12px;
-      font-size: 0.92rem;
-      color: #374151;
+    p{
+      margin:0;
+      font-size:1rem;
+      color:var(--muted);
+      line-height:1.7;
+      max-width:78ch;
     }
 
-    ul {
-      margin: 12px 0 0 18px;
-      padding: 0;
-      color: var(--muted);
-      line-height: 1.7;
+    .spacer{ margin-top:14px; }
+
+    ul{
+      margin:12px 0 0 18px;
+      padding:0;
+      color:var(--muted);
+      line-height:1.7;
     }
 
-    li { margin-bottom: 8px; }
+    li{ margin-bottom:8px; }
 
-    .contact {
-      margin-top: 18px;
-      padding-top: 16px;
-      border-top: 1px solid var(--line);
+    .contact{
+      margin-top:18px;
+      padding-top:16px;
+      border-top:1px solid var(--line);
+      font-size:0.95rem;
+      color:var(--muted);
     }
 
-    .email {
-      color: var(--text);
-      font-weight: 650;
-      text-decoration: none;
-      border-bottom: 2px solid rgba(31,111,91,0.3);
+    .email{
+      color:var(--text);
+      font-weight:600;
+      text-decoration:none;
+      border-bottom:2px solid rgba(31,111,91,0.3);
     }
 
-    .email:hover { border-bottom-color: rgba(31,111,91,0.7); }
-
-    .note {
-      margin-top: 16px;
-      padding-top: 14px;
-      border-top: 1px solid var(--line);
-      font-size: 0.92rem;
-      color: #6b7280;
-      line-height: 1.6;
+    .email:hover{
+      border-bottom-color:rgba(31,111,91,0.7);
     }
 
-    @media (min-width: 980px) {
-      .grid { grid-template-columns: 1.15fr 0.85fr; }
+    .note{
+      margin-top:18px;
+      padding-top:14px;
+      border-top:1px solid var(--line);
+      font-size:0.92rem;
+      color:#6b7280;
+      line-height:1.6;
+    }
+
+    @media (min-width:980px){
+      .grid{
+        grid-template-columns:1.15fr 0.85fr;
+      }
     }
   </style>
 </head>
@@ -150,70 +152,74 @@
   <div class="wrap">
 
     <section class="header">
-      <h1>Intueri Wellness</h1>
-      <p class="tagline">
-        Trauma-informed, evidence-informed counselling support for adult women navigating recovery from domestic violence,
-        identity rebuilding, and major life transitions.
-      </p>
-      <div class="accent-line"></div>
+      <img src="intueri-logo.png" alt="Intueri Wellness logo" class="logo"/>
 
-      <div class="pillrow" aria-label="Credentials">
-        <span class="pill">Selena Bateman, MSW, RSW</span>
-        <span class="pill">Registered Social Worker (Ontario &amp; British Columbia)</span>
-        <span class="pill">Trauma-Informed Practice</span>
+      <h1>Intueri Wellness</h1>
+
+      <p class="tagline">
+        Trauma-informed, evidence-informed counselling support for adult women
+        navigating recovery from domestic violence, identity rebuilding, and
+        major life transitions.
+      </p>
+
+      <div class="credentials">
+        Selena Bateman, MSW, RSW · Registered Social Worker (Ontario &amp; British Columbia)
       </div>
+
+      <div class="accent-line"></div>
     </section>
 
     <section class="grid">
 
       <div class="card">
-        <h2>About Selena</h2>
+        <h2>About</h2>
         <p>
-          I’m Selena Bateman, a Registered Social Worker with over 20 years of experience in social services across
-          clinical, regulatory, and adjudicative settings.
+          I’m Selena Bateman, a Registered Social Worker (MSW) with over 20 years of
+          experience in social services across clinical, regulatory, and
+          adjudicative settings.
         </p>
 
         <p class="spacer">
-          Intueri Wellness offers pro bono counselling focused on supporting adult women navigating recovery from
-          domestic violence and post-abuse stabilization.
+          Intueri Wellness is a pro bono counselling offering focused on supporting
+          adult women navigating recovery from domestic violence and post-abuse
+          stabilization.
         </p>
 
         <p class="spacer">
-          My approach is structured, practical, and supportive. It is grounded in trauma-informed principles and evidence-based
-          tools. The focus of this work is to support emotional stabilization, rebuild self-trust, and assist with clarity
-          during periods of significant transition.
+          This work is grounded in trauma-informed principles and evidence-based
+          approaches, with an emphasis on emotional stabilization, rebuilding
+          self-trust, and supporting clarity during periods of significant
+          transition.
         </p>
 
         <div class="note">
-          This counselling work is offered independently of my government role and is not connected to my employment.
+          This counselling work is offered independently of my government role and
+          is not connected to my employment.
         </div>
       </div>
 
       <div class="card">
-        <h2>Services</h2>
+        <h2>Scope of Support</h2>
         <ul>
-          <li><strong>Pro bono trauma-informed counselling</strong> (limited availability)</li>
-          <li>Support for women navigating recovery from domestic violence</li>
-          <li>Psychoeducation related to trauma, coercive control, and emotional regulation</li>
+          <li>Pro bono trauma-informed counselling</li>
+          <li>Support related to recovery from domestic violence</li>
+          <li>Psychoeducation regarding trauma, coercive control, and emotional regulation</li>
           <li>Post-abuse stabilization and grounding</li>
-          <li>Identity rebuilding and support through major life transitions</li>
+          <li>Identity rebuilding and major life transitions</li>
         </ul>
 
         <div class="contact">
-          <h2>Contact</h2>
           <p>
-            I am not accepting current clients:
+            Contact information is provided for professional identification
+            purposes only:
             <a class="email" href="mailto:selena@intueri.ca">selena@intueri.ca</a>
-          </p>
-          <p class="spacer" style="font-size:0.95rem; color:#6b7280;">
-            
           </p>
         </div>
 
         <div class="note">
-          This service provides non-crisis, outpatient counselling support. It is not a replacement for emergency or crisis
-          services. If you are in immediate danger or require urgent assistance, please contact emergency services or a local
-          crisis line.
+          This is a non-crisis, outpatient counselling offering. It does not replace
+          emergency or crisis services. If you are in immediate danger, contact
+          emergency services or a local crisis line.
         </div>
       </div>
 
