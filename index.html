@@ -4,109 +4,127 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Intueri Wellness</title>
+
   <style>
-    :root{
-      --text:#1f2933;
-      --muted:#4b5563;
-      --line:#e5e7eb;
-      --card:#ffffff;
-      --bg:#f7f6f3; /* soft, warm neutral */
-      --accent:#1f6f5b; /* calm green */
+    :root {
+      --text: #1f2933;
+      --muted: #4b5563;
+      --line: #e5e7eb;
+      --card: #ffffff;
+      --bg: #f7f6f3;
+      --accent: #1f6f5b;
     }
-    html, body { height: 100%; }
-    body{
-      margin:0;
-      font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
     }
-    .wrap{
-      max-width: 860px;
-      margin: 70px auto;
-      padding: 0 22px 120px; /* bottom padding prevents any clipping */
+
+    .wrap {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 0 24px 140px;
     }
-    .top{
+
+    .header {
       background: var(--card);
       border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 28px 26px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+      border-radius: 18px;
+      padding: 32px 32px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.04);
     }
-    h1{
-      margin: 0 0 8px 0;
-      font-size: 2.2rem;
+
+    h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.4rem;
       letter-spacing: -0.02em;
     }
-    .tagline{
+
+    .tagline {
       margin: 0;
       font-size: 1.05rem;
       color: var(--muted);
       line-height: 1.65;
       max-width: 70ch;
     }
-    .accent{
-      display:inline-block;
-      margin-top: 14px;
-      height: 3px;
+
+    .accent-line {
+      margin-top: 16px;
       width: 72px;
+      height: 3px;
       background: var(--accent);
       border-radius: 999px;
     }
 
-    .grid{
-      display:grid;
+    .grid {
+      display: grid;
       grid-template-columns: 1fr;
-      gap: 16px;
-      margin-top: 18px;
+      gap: 20px;
+      margin-top: 28px;
     }
-    .card{
+
+    .card {
       background: var(--card);
       border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 22px 22px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+      border-radius: 18px;
+      padding: 26px 26px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.03);
     }
-    h2{
-      margin: 0 0 10px 0;
-      font-size: 1.2rem;
+
+    h2 {
+      margin: 0 0 12px 0;
+      font-size: 1.25rem;
       letter-spacing: -0.01em;
     }
-    p{
+
+    p {
       margin: 0;
+      font-size: 1rem;
       color: var(--muted);
       line-height: 1.7;
-      font-size: 1rem;
       max-width: 75ch;
     }
-    ul{
-      margin: 10px 0 0 18px;
-      padding:0;
+
+    ul {
+      margin: 12px 0 0 18px;
+      padding: 0;
       color: var(--muted);
       line-height: 1.7;
     }
-    li{ margin: 0 0 8px 0; }
-    .contact{
-      margin-top: 12px;
-      padding-top: 12px;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
+
+    li {
+      margin-bottom: 8px;
     }
-    .email{
+
+    .contact {
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    .email {
       color: var(--text);
       font-weight: 600;
       text-decoration: none;
-      border-bottom: 2px solid rgba(31,111,91,0.25);
+      border-bottom: 2px solid rgba(31,111,91,0.3);
     }
-    .email:hover{ border-bottom-color: rgba(31,111,91,0.6); }
-    footer{
-      margin-top: 16px;
-      color: #6b7280;
+
+    .email:hover {
+      border-bottom-color: rgba(31,111,91,0.7);
+    }
+
+    footer {
+      margin-top: 18px;
       font-size: 0.9rem;
+      color: #6b7280;
       line-height: 1.6;
     }
 
-    @media (min-width: 820px){
-      .grid{
+    @media (min-width: 900px) {
+      .grid {
         grid-template-columns: 1.1fr 0.9fr;
       }
     }
@@ -115,27 +133,31 @@
 
 <body>
   <div class="wrap">
-    <section class="top">
+
+    <section class="header">
       <h1>Intueri Wellness</h1>
       <p class="tagline">
-        Trauma-informed counselling and wellness support for women navigating recovery,
-        identity rebuilding, and major life transitions.
+        Trauma-informed counselling and wellness support for women navigating
+        recovery, identity rebuilding, and major life transitions.
       </p>
-      <span class="accent"></span>
+      <div class="accent-line"></div>
     </section>
 
     <section class="grid">
+
       <div class="card">
         <h2>About</h2>
         <p>
-          Intueri Wellness offers thoughtful, evidence-informed support grounded in trauma-informed practice.
-          Services are designed for adult women seeking stabilization, clarity, and long-term resilience,
-          particularly following intimate partner violence or significant life disruption.
+          Intueri Wellness offers thoughtful, evidence-informed support grounded in
+          trauma-informed practice. Services are designed for adult women seeking
+          stabilization, clarity, and long-term resilience, particularly following
+          experiences of intimate partner violence or significant life disruption.
         </p>
 
         <footer>
-          Intueri Wellness provides non-crisis, outpatient support. Services are independent of any
-          government role and are not a replacement for emergency or crisis services.
+          Intueri Wellness provides non-crisis, outpatient support. Services are
+          independent of any government role and are not a replacement for emergency
+          or crisis services.
         </footer>
       </div>
 
@@ -149,7 +171,18 @@
         </ul>
 
         <div class="contact">
-          <h2 style="margin-top:0;">Contact</h2>
+          <h2>Contact</h2>
           <p>
             Email:
-            <a class="email" href="mailto:hello@intueriwellness.com">hello@intueriwellness.c
+            <a class="email" href="mailto:selena@intueri.ca">
+              selena@intueri.ca
+            </a>
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+</body>
+</html>
