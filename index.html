@@ -22,8 +22,8 @@
 
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       color: var(--ink);
       background:
         radial-gradient(900px 420px at 50% 15%, rgba(46,107,87,0.18), transparent 60%),
@@ -36,7 +36,6 @@
       padding: 56px 22px;
     }
 
-    /* HERO CARD */
     .hero-card {
       max-width: 1100px;
       margin: 0 auto 28px auto;
@@ -54,7 +53,6 @@
       align-items: center;
     }
 
-    /* LOGO */
     .logo-wrap {
       display: flex;
       justify-content: center;
@@ -62,12 +60,11 @@
     }
 
     .logo {
-      height: 160px; /* ← adjust if you want even bigger */
+      height: 160px;
       width: auto;
       display: block;
     }
 
-    /* HERO TEXT */
     .hero-copy {
       max-width: 760px;
     }
@@ -87,7 +84,6 @@
       border-radius: 999px;
     }
 
-    /* LOWER SECTIONS */
     .grid {
       max-width: 1100px;
       margin: 0 auto;
@@ -107,7 +103,6 @@
     .card h2 {
       margin: 0 0 10px 0;
       font-size: 18px;
-      letter-spacing: 0.2px;
     }
 
     .card p {
@@ -131,7 +126,6 @@
       text-decoration: underline;
     }
 
-    /* MOBILE */
     @media (max-width: 860px) {
       .hero-inner {
         grid-template-columns: 1fr;
@@ -153,21 +147,19 @@
 <body>
   <main>
 
-    <!-- HERO -->
     <section class="hero-card">
       <div class="hero-inner">
 
         <div class="logo-wrap">
-          <!-- CHANGE THE SRC PATH IF NEEDED -->
           <img
             class="logo"
-            src="assets/intueri-logo.png"
+            src="images/intueri-logo.png"
             alt="Intueri Wellness logo">
         </div>
 
         <div class="hero-copy">
           <p>
-            Intueri Wellness is a pro bono, trauma-informed counselling offering
+            Intueri Wellness is pro bono counseling
             focused on supporting adult women affected by domestic violence,
             including experiences of coercive control, psychological abuse,
             and post-separation harm.
@@ -179,23 +171,22 @@
       </div>
     </section>
 
-    <!-- LOWER CONTENT -->
     <section class="grid">
 
       <article class="card">
         <h2>Scope of Support</h2>
         <p>
-          The scope of this counselling offering is informed by trauma-focused
+          Counselling is informed by trauma-focused
           frameworks addressing domestic violence and coercive control.
-          Interventions may draw on the <em>When Love Hurts</em> curriculum,
+          Interventions draw on the <em>When Love Hurts</em> curriculum,
           with attention to power dynamics, patterns of psychological abuse,
           and the impact of coercive control over time.
         </p>
         <p>
-          The work may include psychoeducation related to trauma responses
+          Interventions also include psychoeducation related to trauma responses
           associated with domestic violence, including the cognitive,
           emotional, and physiological effects of prolonged interpersonal harm.
-          Stabilization-oriented interventions are used.
+        
         </p>
       </article>
 
@@ -217,7 +208,7 @@
         <h2>Contact</h2>
         <p>
           Email:
-          <a href="mailto:youremail@domain.com">youremail@domain.com</a>
+          <a href="mailto:selena@intueri.ca">selena@intueri.ca</a>
         </p>
       </article>
 
