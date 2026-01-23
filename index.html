@@ -44,12 +44,12 @@
       border: 1px solid var(--border);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: 36px; /* slightly more breathing room */
+      padding: 36px;
     }
 
     .hero-inner {
       display: grid;
-      grid-template-columns: 280px 1fr; /* wider logo column */
+      grid-template-columns: 320px 1fr; /* increased to support larger logo */
       gap: 28px;
       align-items: center;
     }
@@ -62,7 +62,7 @@
     }
 
     .logo {
-      height: 220px; /* BIGGER logo */
+      height: 250px; /* increased from 220px */
       width: auto;
       display: block;
     }
@@ -149,7 +149,9 @@
         text-align: center;
       }
 
-      .logo { height: 190px; } /* still big on mobile */
+      .logo {
+        height: 210px; /* proportional on mobile */
+      }
 
       .grid {
         grid-template-columns: 1fr;
@@ -166,7 +168,6 @@
 <body>
   <main>
 
-    <!-- HERO -->
     <section class="hero-card">
       <div class="hero-inner">
 
@@ -190,10 +191,8 @@
       </div>
     </section>
 
-    <!-- LOWER CONTENT -->
     <section class="grid">
 
-      <!-- DBT language restored here -->
       <article class="card">
         <h2>Scope of Support</h2>
 
