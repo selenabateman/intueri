@@ -36,7 +36,6 @@
       padding: 56px 22px;
     }
 
-    /* HERO CARD */
     .hero-card {
       max-width: 1100px;
       margin: 0 auto 28px auto;
@@ -49,12 +48,11 @@
 
     .hero-inner {
       display: grid;
-      grid-template-columns: 320px 1fr; /* increased to support larger logo */
+      grid-template-columns: 320px 1fr;
       gap: 28px;
       align-items: center;
     }
 
-    /* LOGO */
     .logo-wrap {
       display: flex;
       justify-content: center;
@@ -62,12 +60,11 @@
     }
 
     .logo {
-      height: 250px; /* increased from 220px */
+      height: 250px;
       width: auto;
       display: block;
     }
 
-    /* HERO TEXT */
     .hero-copy {
       max-width: 760px;
     }
@@ -79,6 +76,13 @@
       color: var(--muted);
     }
 
+    .tagline {
+      margin-top: 12px;
+      font-size: 15px;
+      letter-spacing: 0.3px;
+      color: var(--muted);
+    }
+
     .accent-line {
       margin-top: 18px;
       width: 90px;
@@ -87,7 +91,6 @@
       border-radius: 999px;
     }
 
-    /* LOWER SECTIONS */
     .grid {
       max-width: 1100px;
       margin: 0 auto;
@@ -140,7 +143,6 @@
       text-decoration: underline;
     }
 
-    /* MOBILE */
     @media (max-width: 860px) {
       main { padding: 36px 16px; }
 
@@ -150,7 +152,7 @@
       }
 
       .logo {
-        height: 210px; /* proportional on mobile */
+        height: 210px;
       }
 
       .grid {
@@ -180,9 +182,13 @@
 
         <div class="hero-copy">
           <p>
-            Intueri Wellness offers pro bono counseling focused on supporting
-            adult women affected by domestic violence, coercive control,
-            psychological abuse, and post-separation harm.
+            Intueri Wellness provides limited, pro bono, individual support for women
+            25 years of age and older who self-identify as having experienced intimate partner violence,
+            coercive control, psychological abuse, or post-separation harm.
+          </p>
+
+          <p class="tagline">
+            Woman-centred. Trauma-informed. Evidence-based.
           </p>
 
           <div class="accent-line"></div>
@@ -197,42 +203,49 @@
         <h2>Scope of Support</h2>
 
         <p>
-          Counseling is informed by trauma-focused addressing the impacts of
-          domestic violence and coercive control. The work is stabilization-oriented and focused on
-          supporting safety, clarity, and psychological recovery following interpersonal harm.
+          Support is trauma-informed and stabilization-oriented, with attention to safety, structure,
+          clarity, and post-abuse stabilization following intimate partner violence and coercive control.
         </p>
 
         <p>
-          Interventions draw on the When Love Hurts curriculum, Cognitive Behavioural Therapy, and Dialectical Behavioural Therapy to support:
+          Interventions draw on the When Love Hurts curriculum, CBT-informed approaches, and DBT skills
+          training to support:
         </p>
 
         <ul>
-          <li>emotion regulation and restructuring of cognitive patterns</li>
-          <li>distress tolerance during periods of instability or post-separation harm</li>
-          <li>interpersonal effectiveness in the context of power imbalance and boundary erosion</li>
+          <li>emotion regulation and cognitive restructuring</li>
+          <li>distress tolerance during periods of instability, including post-separation harm</li>
+          <li>interpersonal effectiveness where power imbalance and boundary erosion are present</li>
           <li>grounding and present-focused strategies to reduce trauma-related dysregulation</li>
         </ul>
 
         <p>
-          The focus is on restoring agency, supporting decision-making
-          capacity, and reducing the impacts of coercive control over time.
+          The work focuses on strengthening agency, supporting decision-making capacity, and reducing
+          the functional impacts of coercive control over time.
         </p>
       </article>
 
       <article class="card">
         <h2>Important Information</h2>
+
         <p>
           Intueri Wellness is not an emergency or crisis service and does not provide crisis intervention,
-          emergency response, or medical care. Individuals experiencing immediate risk or danger should
-          contact emergency services or a local crisis line.
+          emergency response, or medical care. If you are in immediate danger or require urgent support,
+          contact emergency services in your area.
         </p>
+
         <p>
-          This counselling work is offered independently and is not connected to any government role or employment.
+          This website provides general information about scope and eligibility.
+        </p>
+
+        <p>
+          This support is offered independently and is not connected to any government role or employment.
         </p>
 
         <hr>
 
         <h2>Contact</h2>
+
         <p>
           Email:
           <a href="mailto:selena@intueri.ca">selena@intueri.ca</a>
