@@ -69,6 +69,7 @@
       max-width: 760px;
     }
 
+    /* Base hero paragraph styling */
     .hero-copy p {
       margin: 0;
       font-size: 18px;
@@ -76,9 +77,12 @@
       color: var(--muted);
     }
 
+    /* FIX: create space between intro paragraph and tagline */
+    .hero-copy p:first-of-type {
+      margin-bottom: 16px;
+    }
+
     .tagline {
-      margin-top: 24px;
-      margin-bottom: 12px; /* ← FIX: creates space below tagline */
       font-size: 15px;
       letter-spacing: 0.3px;
       color: var(--muted);
